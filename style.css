@@ -157,7 +157,7 @@ h2 {
     grid-column-gap: 8px;
 }
 
-.location img, .date img{
+.location img, .date img, .skill-item img{
     width: 14px;
     height: 14px;
 }
@@ -279,4 +279,25 @@ h2 {
     flex-flow: row wrap;
     align-content: space-evenly;
     gap: 1rem;
+}
+
+.text-secondary {
+    color: #333;
+}
+
+.wrap .skill-item {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid #ededee;
+    margin-top: 80px;
+    padding: 40px;
+    font-weight: 500;
 }
