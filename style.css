@@ -143,7 +143,7 @@ h2 {
 
 .date {
     display: flex;
-    width: 130px;
+    width: 160px;
     height: 30px;
     justify-content: center;
     align-items: center;
@@ -282,7 +282,7 @@ h2 {
 }
 
 .text-secondary {
-    color: #333;
+    color: #4f4f4f;
 }
 
 .wrap .skill-item {
