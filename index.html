@@ -12,19 +12,40 @@
   </head>
   <body>
     <div class="container">
-      <!-- Resume name title -->
+      <!-- nav section start -->
+      <div class="nav-container">
+        <div class="nav border-grey color-grey">
+          <div class="icon-img">
+            <img src="./images/profile_icon.jpg" alt="">
+          </div>
+          <ul>
+            <a href="#"><li>Profile</li></a>
+            <a href="#education"><li>Education</li></a>
+            <a href="#experience"><li>Experience</li></a>
+            <a href="#skills"><li>Skills</li></a>
+          </ul>
+          <button class="theme-switcher">
+            Switch theme
+          </button>
+        </div>
+      </div>
+      <!-- nav section end -->
+
+      <!-- Resume name title start-->
       <div class="name" data-aos="fade-up" data-aos-duration="1000">
         <div>
           <h1>Muhammed Rebin</h1>
           <h3 class="color-grey">Fullstack Developer</h3>
         </div>
       </div>
+      <!-- Resume name title start-->
+
       <!-- Profile info start -->
       <div class="profile-info">
         <div class="profile-img radius-12" data-aos="zoom-in" data-aos-duration="1000">
           <img src="./images/pic.jpeg" alt="" class="radius-12 border-grey" />
         </div>
-        <div class="about radius-12 border-grey bg-white pd-24" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="about radius-12 border-grey bg-section pd-24" data-aos="zoom-in" data-aos-duration="1000">
           
             <div class="icon radius-12 border-grey">
               <img
@@ -47,7 +68,7 @@
                 alt=""
                 class="icon-size-14"
               />
-              <div class="font-s color-grey">
+              <div class="font-s color-grey" id="education">
                 Based in Kozhikode, kerala, India.
               </div>
             </div>
@@ -57,7 +78,7 @@
       <!-- Profile info end -->
 
       <!-- Education section start -->
-      <div class="education border-grey pd-24 radius-12 bg-white mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="education border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
         <div class="border-bottom-1">
           <div class="icon radius-12 border-grey">
             <img
@@ -120,7 +141,7 @@
                 alt=""
                 class="icon-size-14"
               />
-              <div class="text-secondary">2017 - 2018</div>
+              <div class="text-secondary" id="experience">2017 - 2018</div>
             </div>
           </div>
         </div>
@@ -129,7 +150,7 @@
       <!-- Education section end -->
 
       <!-- Experience section start-->
-      <div class="experience border-grey pd-24 radius-12 bg-white mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="experience border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
         <!-- Experience section title start -->
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
@@ -141,7 +162,6 @@
           </div>
           <h2 class="mt-20 mb-24">Experience</h2>
         </div>
-        <!-- Experience section title end -->
         
         <!-- Experience timeline start -->
         <div class="timeline">
@@ -177,10 +197,9 @@
                 </div>
               </div>
               <p class="descreption color-grey font-s">
-                Designed and developed dynamic, responsive user interfaces using React.js and 
-                implemented backend communication to seamlessly connect the frontend and backend 
-                layers. Developed a fundamental CRUD application, ensuring 
-                efficient data management and interaction within the system.
+                Contributed to the development and optimization of Python-based applications. 
+                Gained hands-on experience in utilizing Python libraries and frameworks. Improved
+                problem-solving skills and understanding of software development practices.
               </p>
             </div>
           </div>
@@ -232,7 +251,7 @@
       <!-- Experience section end-->
 
       <!-- Projects section start -->
-      <div class="project border-grey pd-24 radius-12 bg-white mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="project border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -254,11 +273,13 @@
               <div class="line-h">
                 <h3>Text2visual App</h3>
               </div>
-              <div class="date border-grey pointer">
-                <div class="font-s d-flex grid-gap-8">
-                  <div class="color-grey">Source code</div>
+              <a href="#">
+                <div class="date border-grey pointer">
+                  <div class="font-s d-flex grid-gap-8">
+                    <a href="https://github.com/rebin03/Text2Visual" target="_blank"><div class="color-grey">Source code</div></a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
               <p class="descreption color-grey font-s my-10">
@@ -281,11 +302,13 @@
               <div class="line-h">
                 <h3>Land Registry App using Blockchain </h3>
               </div>
-              <div class="date border-grey pointer">
-                <div class="font-s d-flex grid-gap-8">
-                  <div class="color-grey">Source code</div>
+              <a href="#">
+                <div class="date border-grey pointer">
+                  <div class="font-s d-flex grid-gap-8">
+                    <a href="https://github.com/rebin03/Land-Registry-Using-Blockchain" target="_blank"><div class="color-grey">Source code</div></a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
               <p class="descreption color-grey font-s my-10">
@@ -308,11 +331,13 @@
               <div class="line-h">
                 <h3>Netflix-UI-Clone</h3>
               </div>
-              <div class="date border-grey pointer">
-                <div class="font-s d-flex grid-gap-8">
-                  <div class="color-grey">Source code</div>
+              <a href="#">
+                <div class="date border-grey pointer">
+                  <div class="font-s d-flex grid-gap-8">
+                    <a href="https://github.com/rebin03/Netflix-UI-clone" target="_blank"><div class="color-grey">Source code</div></a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
               <p class="descreption color-grey font-s my-10">
@@ -320,7 +345,7 @@
                 Seamlessly Integrated Real-Time Movie Data with TMDB API through REST Integration
               </p>
               <div class="location">
-                <div class="font-s color-grey">
+                <div class="font-s color-grey"  id="skills">
                   Role: Frontend Developer
                 </div>
               </div>
@@ -334,7 +359,7 @@
       <!-- Projects section end -->
 
       <!-- Skills section start -->
-      <div class="border-grey pd-24 radius-12 bg-white mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -446,6 +471,19 @@
               alt=""
               class="icon-size-14"
               />
+              <div class="text-secondary">Bootstrap</div>
+            </div>
+          </div>
+          <!-- skill items end -->
+          
+          <!-- skill items start -->
+          <div class="skill-item border-grey">
+            <div class="font-s d-flex space-between grid-gap-8">
+              <img
+              src="https://assets-global.website-files.com/65c4b78e2f4b9d4b1696ade5/65c4f55c9e5f843710b25838_Checkmark.svg"
+              alt=""
+              class="icon-size-14"
+              />
               <div class="text-secondary">Git</div>
             </div>
           </div>
@@ -469,7 +507,7 @@
       <!-- Skills section end -->
 
       <!-- Certifications and Achievments section start -->
-      <div class="certifications border-grey pd-24 radius-12 bg-white mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="certifications border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -480,11 +518,51 @@
           </div>
           <h2 class="mt-20 mb-24">Certifications and Achievments</h2>
         </div>
+        <div class="certification-item-list">
+          <!-- certification list start -->
+          <div class="certification-item">
+            <h3>Python Certification</h3>
+            <span class="font-s color-grey">HackerRank • Issued Aug 2024</span>
+            <a href="https://www.hackerrank.com/certificates/f6308cc2b23b" target="_blank">
+              <div class="credential-link border-grey">
+                <div class="d-flex grid-gap-8">
+                  <img
+                  src="https://cdn.prod.website-files.com/65c4b78e2f4b9d4b1696ade5/65c4f028add44f95c2186922_Arrow%20Up.svg"
+                  alt=""
+                  class="icon-size-14"
+                  />
+                  <div>Show Credentials</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- certification list start -->
+
+          <!-- certification list start -->
+          <div class="certification-item">
+            <h3>Basic Web Designing</h3>
+            <span class="font-s color-grey">GTech MuLearn • Issued Jan 2023</span>
+            <a href="https://drive.google.com/file/d/1PGX4uYBUextoBG8zmev2ODHAwmy9ZNB-/view" target="_blank">
+              <div class="credential-link border-grey">
+                <div class="d-flex grid-gap-8">
+                  <img
+                  src="https://cdn.prod.website-files.com/65c4b78e2f4b9d4b1696ade5/65c4f028add44f95c2186922_Arrow%20Up.svg"
+                  alt=""
+                  class="icon-size-14"
+                  />
+                  <div>Show Credentials</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- certification list start -->
+
+        </div>
       </div>
       <!-- Certifications and Achievments section end -->
 
       <!-- Language section start -->
-      <div class="languages border-grey pd-24 radius-12 bg-white mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="languages border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
