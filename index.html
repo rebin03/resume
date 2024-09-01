@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammmed Rebin</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- AOS animate cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Animate cdn -->
-
+    <!-- FA cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
     <div class="container">
       <!-- nav section start -->
       <div class="nav-container">
         <div class="nav border-grey color-grey">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+          </label>
           <div class="icon-img">
             <img src="./images/profile_icon.jpg" alt="">
           </div>
           <ul>
-            <a href="#"><li>Profile</li></a>
-            <a href="#education"><li>Education</li></a>
-            <a href="#experience"><li>Experience</li></a>
-            <a href="#skills"><li>Skills</li></a>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li> 
           </ul>
           <button class="theme-switcher">
-            Switch theme
+            <i class="fas fa-moon"></i>
           </button>
         </div>
       </div>
@@ -34,6 +39,7 @@
       <!-- Resume name title start-->
       <div class="name" data-aos="fade-up" data-aos-duration="1000">
         <div>
+          <button class="btn-status"><span class="blinking-dot">●</span>Available for Work</button>
           <h1>Muhammed Rebin</h1>
           <h3 class="color-grey">Fullstack Developer</h3>
         </div>
@@ -42,10 +48,10 @@
 
       <!-- Profile info start -->
       <div class="profile-info">
-        <div class="profile-img radius-12" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="profile-img radius-12">
           <img src="./images/pic.jpeg" alt="" class="radius-12 border-grey" />
         </div>
-        <div class="about radius-12 border-grey bg-section pd-24" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="about radius-12 border-grey bg-section pd-24">
           
             <div class="icon radius-12 border-grey">
               <img
@@ -78,7 +84,7 @@
       <!-- Profile info end -->
 
       <!-- Education section start -->
-      <div class="education border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="education border-grey pd-24 radius-12 bg-section mt-8">
         <div class="border-bottom-1">
           <div class="icon radius-12 border-grey">
             <img
@@ -150,7 +156,7 @@
       <!-- Education section end -->
 
       <!-- Experience section start-->
-      <div class="experience border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="experience border-grey pd-24 radius-12 bg-section mt-8">
         <!-- Experience section title start -->
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
@@ -169,7 +175,7 @@
           <!-- timeline item start -->
           <div class="timeline-item">
             <div class="circle-dot"></div>
-            <div class=" d-flex space-between">
+            <div class="experience-info d-flex space-between">
               <div class="line-h">
                 <h3>Python Developer Intern</h3>
                 <span class="d-block color-grey font-s">Luminar Technolab - Intern</span>
@@ -208,7 +214,7 @@
           <!-- timeline item start -->
           <div class="timeline-item">
             <div class="circle-dot"></div>
-            <div class=" d-flex space-between">
+            <div class="experience-info d-flex space-between">
               <div class="line-h">
                 <h3>Fullstack Developer Intern</h3>
                 <span class="d-block color-grey font-s">Futura Labs - Intern</span>
@@ -235,7 +241,7 @@
                   Kozhikode, kerala, India.
                 </div>
               </div>
-              <p class="descreption color-grey font-s">
+              <p class="descreption color-grey font-s" id="projects">
                 Designed and developed dynamic, responsive user interfaces using React.js and 
                 implemented backend communication to seamlessly connect the frontend and backend 
                 layers. Developed a fundamental CRUD application, ensuring 
@@ -244,14 +250,13 @@
             </div>
           </div>
           <!-- timeline item end -->
-
         </div>
         <!-- Experience timeline end -->
       </div>
       <!-- Experience section end-->
 
       <!-- Projects section start -->
-      <div class="project border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="project border-grey pd-24 radius-12 bg-section mt-8">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -269,7 +274,7 @@
           <!-- Project timeline item start -->
           <div class="timeline-item">
             <div class="circle-dot"></div>
-            <div class=" d-flex space-between">
+            <div class="project-info d-flex space-between">
               <div class="line-h">
                 <h3>Text2visual App</h3>
               </div>
@@ -298,7 +303,7 @@
           <!-- Project timeline item start -->
           <div class="timeline-item">
             <div class="circle-dot"></div>
-            <div class=" d-flex space-between">
+            <div class="project-info d-flex space-between">
               <div class="line-h">
                 <h3>Land Registry App using Blockchain </h3>
               </div>
@@ -327,7 +332,7 @@
           <!-- Project timeline item start -->
           <div class="timeline-item">
             <div class="circle-dot"></div>
-            <div class=" d-flex space-between">
+            <div class="project-info d-flex space-between">
               <div class="line-h">
                 <h3>Netflix-UI-Clone</h3>
               </div>
@@ -359,7 +364,7 @@
       <!-- Projects section end -->
 
       <!-- Skills section start -->
-      <div class="border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="border-grey pd-24 radius-12 bg-section mt-8">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -507,7 +512,7 @@
       <!-- Skills section end -->
 
       <!-- Certifications and Achievments section start -->
-      <div class="certifications border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="certifications border-grey pd-24 radius-12 bg-section mt-8">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -537,7 +542,7 @@
             </a>
           </div>
           <!-- certification list start -->
-
+          <div class="divider"></div>
           <!-- certification list start -->
           <div class="certification-item">
             <h3>Basic Web Designing</h3>
@@ -562,7 +567,7 @@
       <!-- Certifications and Achievments section end -->
 
       <!-- Language section start -->
-      <div class="languages border-grey pd-24 radius-12 bg-section mt-8" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="languages border-grey pd-24 radius-12 bg-section mt-8">
         <div class="border-bottom-1 mb-8">
           <div class="icon radius-12 border-grey">
             <img
@@ -616,5 +621,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="/js/script.js"></script>
+  <script src="./js/style-switcher.js"></script>
 
 </html>
