@@ -201,6 +201,10 @@ body {
     /* margin-right: 5px; */
 }
 
+.education-info .date i{
+    margin-right: 10px;
+}
+
 h2 {
     font-weight: 500;
     font-size: 1.3rem;
