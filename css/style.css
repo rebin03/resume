@@ -506,7 +506,10 @@ p{
 @media screen and (max-width: 1120px) {
 
     .theme-switcher {
-        display: none;
+        position: relative;
+        top: 60px;
+        right: -140px;
+        border-radius: 50px;
     }
 
     .checkbtn {
@@ -603,6 +606,12 @@ p{
     .timeline .timeline-item .descreption{
         max-width: 100%;
     }
+
+    /* .theme-switcher {
+        position: relative;
+        top: 0;
+        right: 0;
+    } */
 
 }
 
