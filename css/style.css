@@ -555,12 +555,6 @@ p{
     }
 }
 
-@media screen and (max-width: ) {
-    .nav ul {
-        width: 75%;
-    }
-}
-
 
 @media screen and (max-width: 886px) {
 
