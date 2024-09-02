@@ -505,13 +505,6 @@ p{
 
 @media screen and (max-width: 1120px) {
 
-    .theme-switcher {
-        position: relative;
-        top: 60px;
-        right: -130px;
-        border-radius: 50px;
-    }
-
     .checkbtn {
         display: block;
         order: 1;
@@ -556,6 +549,13 @@ p{
 
     #check:checked ~ ul {
     top: 85px;
+    }
+
+    .theme-switcher {
+        position: relative;
+        top: 60px;
+        right: -130px;
+        border-radius: 50px;
     }
 }
 
@@ -629,4 +629,13 @@ p{
         width: unset;
     }
 
+}
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    .theme-switcher {
+        position: relative;
+        top: 60px;
+        right: -262px;
+        border-radius: 50px;
+    }
 }
